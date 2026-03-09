@@ -1,12 +1,271 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Benvenuti</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Primary Meta -->
+<title>In God We Rust</title>
+<meta name="description" content="National Motto — 2026 Revised Edition. Est. MDCCLXXVI · Still pending.">
+<meta name="author" content="Hacked-Crew">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="In God We Rust">
+<meta property="og:description" content="GOD LESS AMERICA — National Motto, 2026 Revised Edition. Est. MDCCLXXVI · Still pending.">
+<meta property="og:image" content="https://hacked-crew.com/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="In God We Rust — GOD LESS AMERICA">
+<meta property="og:url" content="https://hacked-crew.com">
+<meta property="og:site_name" content="Hacked-Crew">
+<meta property="og:locale" content="en_US">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="In God We Rust">
+<meta name="twitter:description" content="GOD LESS AMERICA — National Motto, 2026 Revised Edition. Est. MDCCLXXVI · Still pending.">
+<meta name="twitter:image" content="https://hacked-crew.com/og-image.png">
+<meta name="twitter:image:alt" content="In God We Rust — GOD LESS AMERICA">
+<meta name="twitter:creator" content="@HackedCrew">
+<meta name="twitter:site" content="@HackedCrew">
+
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --bg: #F5F0E8;
+    --ink: #1A1A18;
+    --rust: #B94A2C;
+    --muted: #8A8578;
+  }
+
+  body {
+    background: var(--bg);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'DM Mono', monospace;
+    overflow: hidden;
+  }
+
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
+    opacity: 0.35;
+    pointer-events: none;
+    z-index: 10;
+  }
+
+  .card {
+    position: relative;
+    width: min(520px, 90vw);
+    padding: 72px 64px 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    animation: fadeUp 1s cubic-bezier(0.16, 1, 0.3, 1) both;
+  }
+
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(24px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+
+  .card::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 72px;
+    bottom: 60px;
+    width: 2px;
+    background: var(--rust);
+    animation: lineGrow 1.2s cubic-bezier(0.16, 1, 0.3, 1) 0.2s both;
+    transform-origin: top;
+  }
+
+  @keyframes lineGrow {
+    from { transform: scaleY(0); }
+    to   { transform: scaleY(1); }
+  }
+
+  .eyebrow {
+    font-size: 10px;
+    font-weight: 300;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 28px;
+    animation: fadeUp 1s cubic-bezier(0.16, 1, 0.3, 1) 0.15s both;
+  }
+
+  .main-text {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: clamp(64px, 14vw, 96px);
+    line-height: 0.92;
+    letter-spacing: 0.01em;
+    color: var(--ink);
+    animation: fadeUp 1s cubic-bezier(0.16, 1, 0.3, 1) 0.25s both;
+  }
+
+  .word-swap {
+    position: relative;
+    display: inline-block;
+  }
+
+  .word-trust {
+    display: inline-block;
+    color: var(--ink);
+    position: relative;
+  }
+
+  .word-trust::after {
+    content: '';
+    position: absolute;
+    left: 0; right: 0;
+    top: 52%;
+    height: 3px;
+    background: var(--rust);
+    transform: scaleX(0);
+    transform-origin: left;
+    animation: strikeIn 0.5s cubic-bezier(0.16, 1, 0.3, 1) 1.4s forwards;
+  }
+
+  @keyframes strikeIn {
+    to { transform: scaleX(1); }
+  }
+
+  .word-rust {
+    position: absolute;
+    top: -34px;
+    left: 0;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1em;
+    color: var(--rust);
+    opacity: 0;
+    animation: rustAppear 0.5s cubic-bezier(0.16, 1, 0.3, 1) 1.7s forwards;
+    white-space: nowrap;
+  }
+
+  @keyframes rustAppear {
+    from { opacity: 0; transform: translateY(6px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+
+  .divider {
+    width: 32px;
+    height: 1px;
+    background: var(--rust);
+    margin: 28px 0 20px;
+    opacity: 0;
+    animation: fadeIn 0.6s ease 0.7s forwards;
+  }
+
+  @keyframes fadeIn { to { opacity: 1; } }
+
+  .subtitle {
+    font-family: 'DM Mono', monospace;
+    font-size: clamp(13px, 2.5vw, 16px);
+    letter-spacing: 0.12em;
+    color: var(--ink);
+    opacity: 0;
+    animation: fadeUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.9s forwards;
+  }
+
+  .subtitle .god-less { color: var(--rust); }
+
+  .footnote {
+    margin-top: 40px;
+    font-size: 9px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--muted);
+    opacity: 0;
+    animation: fadeIn 0.6s ease 2s forwards;
+  }
+
+  .sig-bottom {
+    margin-top: 10px;
+    font-size: 8px;
+    letter-spacing: 0.18em;
+    color: var(--bg);
+    user-select: text;
+    font-family: 'DM Mono', monospace;
+  }
+
+  .watermark {
+    position: absolute;
+    right: -10px;
+    bottom: 40px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 180px;
+    color: var(--ink);
+    opacity: 0.03;
+    line-height: 1;
+    pointer-events: none;
+    user-select: none;
+  }
+
+  .sig-line {
+    position: absolute;
+    left: -32px;
+    top: 50%;
+    transform: translateY(-50%) rotate(-90deg);
+    font-family: 'DM Mono', monospace;
+    font-size: 7px;
+    letter-spacing: 0.35em;
+    text-transform: uppercase;
+    color: var(--rust);
+    opacity: 0.33;
+    white-space: nowrap;
+    pointer-events: none;
+    user-select: none;
+  }
+
+  .sig-dollar {
+    position: absolute;
+    right: 18px;
+    bottom: 108px;
+    font-family: 'DM Mono', monospace;
+    font-size: 8px;
+    letter-spacing: 0.2em;
+    color: var(--ink);
+    opacity: 0.055;
+    pointer-events: none;
+    user-select: none;
+    transform: rotate(-4deg);
+  }
+</style>
 </head>
 <body>
-    <h1>Ciao, mondo!</h1>
-    <p>Benvenuti nel nostro sito ospitato su GitHub Pages.</p>
+<div class="card">
+  <div class="watermark">$</div>
+  <div class="sig-line">Hacked-Crew</div>
+
+  <div class="eyebrow">National Motto — 2026 Revised Edition</div>
+
+  <div class="main-text">
+    IN GOD<br>
+    WE&nbsp;<span class="word-swap">
+      <span class="word-trust">TRUST</span>
+      <span class="word-rust">RUST</span>
+    </span>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="subtitle">
+    <span class="god-less">GOD&nbsp;LESS</span>&nbsp;AMERICA
+  </div>
+
+  <div class="sig-dollar">Hacked-Crew</div>
+
+  <div class="footnote">Est. MDCCLXXVI &nbsp;·&nbsp; Still pending</div>
+  <div class="sig-bottom">Hacked-Crew</div>
+</div>
 </body>
 </html>
