@@ -62,7 +62,7 @@ Commercial licensing is available upon agreement.
 
 ## ✍️ Author
 
-[Hacked-Crew]
+Hacked-Crew
 
 ---
 
