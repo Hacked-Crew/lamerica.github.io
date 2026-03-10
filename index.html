@@ -6,20 +6,29 @@
 
 <!-- Primary Meta -->
 <title>In God We Rust</title>
-<meta name="description" content="National Motto — 2026 Revised Edition. Est. MDCCLXXVI · Still pending.">
+<meta name="description" content="Unsolicited revision. Est. MDCCLXXVI · Still pending.">
 <meta name="author" content="Hacked-Crew">
 
 <!-- Open Graph -->
 <meta property="og:type" content="website">
 <meta property="og:title" content="In God We Rust">
-<meta property="og:description" content="GOD LESS AMERICA — National Motto, 2026 Revised Edition. Est. MDCCLXXVI · Still pending.">
-<meta property="og:image" content="https://github.com/Hacked-Crew/lamerica.github.io/blob/73cea51a1924e78cb28bfc21e29a4ff074e7eb6e/og-image.png">
+<meta property="og:description" content="GOD LESS ᵁˢAMERICA — Unsolicited revision. Est. MDCCLXXVI · Still pending.">
+<meta property="og:image" content="https://hacked-crew.com/og-image.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="In God We Rust — GOD LESS AMERICA">
+<meta property="og:image:alt" content="In God We Rust — GOD LESS ᵁˢAMERICA">
 <meta property="og:url" content="https://github.com/Hacked-Crew/lamerica.github.io/">
 <meta property="og:site_name" content="Hacked-Crew">
 <meta property="og:locale" content="en_US">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="In God We Rust">
+<meta name="twitter:description" content="GOD LESS ᵁˢAMERICA — Unsolicited revision. Est. MDCCLXXVI · Still pending.">
+<meta name="twitter:image" content="https://hacked-crew.com/og-image.png">
+<meta name="twitter:image:alt" content="In God We Rust — GOD LESS ᵁˢAMERICA">
+<meta name="twitter:creator" content="@HackedCrew">
+<meta name="twitter:site" content="@HackedCrew">
 
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet">
 <style>
@@ -108,43 +117,57 @@
     display: inline-block;
   }
 
-  .word-trust {
+  .letter-t {
+    position: relative;
     display: inline-block;
     color: var(--ink);
-    position: relative;
   }
 
-  .word-trust::after {
-    content: '';
+  .x-mark {
     position: absolute;
-    left: 0; right: 0;
-    top: 52%;
-    height: 3px;
-    background: var(--rust);
-    transform: scaleX(0);
-    transform-origin: left;
-    animation: strikeIn 0.5s cubic-bezier(0.16, 1, 0.3, 1) 1.4s forwards;
+    left: 50%;
+    top: 37.5%;  /* era 50%, spostato su del 12.5% */
+    transform: translate(-50%, -50%);
+    width: 75%;
+    height: 115%;
+    pointer-events: none;
+    overflow: visible;
   }
 
-  @keyframes strikeIn {
-    to { transform: scaleX(1); }
+  .x-mark .x-line1,
+  .x-mark .x-line2 {
+    fill: none;
+    stroke: #B94A2C;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    filter: url(#pen);
   }
 
-  .word-rust {
-    position: absolute;
-    top: -34px;
-    left: 0;
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 1em;
-    color: var(--rust);
-    opacity: 0;
-    animation: rustAppear 0.5s cubic-bezier(0.16, 1, 0.3, 1) 1.7s forwards;
-    white-space: nowrap;
+  .x-mark .x-line1 {
+    stroke-width: 5.85;
+    stroke-dasharray: 260;
+    stroke-dashoffset: 260;
+    animation: drawStroke1 0.44s cubic-bezier(0.25, 0, 0.35, 1) 1.3s forwards;
   }
 
-  @keyframes rustAppear {
-    from { opacity: 0; transform: translateY(6px); }
-    to   { opacity: 1; transform: translateY(0); }
+  .x-mark .x-line2 {
+    stroke-width: 4.94;
+    stroke-dasharray: 250;
+    stroke-dashoffset: 250;
+    animation: drawStroke2 0.38s cubic-bezier(0.35, 0, 0.5, 1) 1.78s forwards;
+  }
+
+  @keyframes drawStroke1 { to { stroke-dashoffset: 0; } }
+  @keyframes drawStroke2 { to { stroke-dashoffset: 0; } }
+
+  .letters-rust {
+    display: inline-block;
+    color: var(--ink);
+    animation: rustColor 1.1s ease 2.2s forwards;
+  }
+
+  @keyframes rustColor {
+    to { color: var(--rust); }
   }
 
   .divider {
@@ -168,6 +191,16 @@
   }
 
   .subtitle .god-less { color: var(--rust); }
+
+  .us-sup {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.55em;
+    font-weight: 300;
+    letter-spacing: 0.05em;
+    color: var(--muted);
+    vertical-align: super;
+    line-height: 0;
+  }
 
   .footnote {
     margin-top: 40px;
@@ -237,20 +270,48 @@
   <div class="watermark">$</div>
   <div class="sig-line">Hacked-Crew</div>
 
-  <div class="eyebrow">National Motto — 2026 Revised Edition</div>
+  <div class="eyebrow">Unsolicited revision</div>
 
   <div class="main-text">
     IN GOD<br>
     WE&nbsp;<span class="word-swap">
-      <span class="word-trust">TRUST</span>
-      <span class="word-rust">RUST</span>
+      <span class="letter-t">
+        T
+        <svg class="x-mark" viewBox="0 0 75 115" preserveAspectRatio="none"
+             xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <filter id="pen" x="-10%" y="-10%" width="120%" height="120%">
+              <feTurbulence
+                type="fractalNoise"
+                baseFrequency="0.038 0.11"
+                numOctaves="4"
+                seed="17"
+                result="noise"/>
+              <feDisplacementMap
+                in="SourceGraphic"
+                in2="noise"
+                scale="3.4"
+                xChannelSelector="R"
+                yChannelSelector="G"
+                result="displaced"/>
+              <feGaussianBlur in="displaced" stdDeviation="0.4 0.18"/>
+            </filter>
+          </defs>
+          <path class="x-line1"
+            d="M 1,5 C 4,14 10,24 22,46 C 38,74 58,100 74,117"
+          />
+          <path class="x-line2"
+            d="M 78,3 C 72,16 64,26 50,48 C 36,70 16,96 -5,118"
+          />
+        </svg>
+      </span><span class="letters-rust">RUST</span>
     </span>
   </div>
 
   <div class="divider"></div>
 
   <div class="subtitle">
-    <span class="god-less">GOD&nbsp;LESS</span>&nbsp;AMERICA
+    <span class="god-less">GOD&nbsp;LESS</span>&nbsp;<sup class="us-sup">US</sup>AMERICA
   </div>
 
   <div class="sig-dollar">Hacked-Crew</div>
