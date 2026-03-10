@@ -16,7 +16,7 @@ Wordplay, irony, and reflections on contemporary USA culture.
 
 ## 🌐 Demo
 
-👉 [View the page](https://YOUR-LINK-HERE)
+👉 [View the page](https://github.com/Hacked-Crew/lamerica.github.io/)
 
 ---
 
