@@ -1,7 +1,7 @@
 # lamerica.github.io
 
-[![Content License: CC BY-NC-SA-4.0](https://img.shields.io/badge/Content%20License-CC%20BY--NC--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 [![Code License: MIT](https://img.shields.io/badge/Code%20License-MIT-yellow.svg)](LICENSE-MIT)
+[![Content License: CC BY-NC-SA-4.0](https://img.shields.io/badge/Content%20License-CC%20BY--NC--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 
 ---
 
@@ -37,16 +37,16 @@ Wordplay, irony, and reflections on contemporary USA culture.
 
 This project uses a dual licensing model:
 
+### Source code (HTML, CSS)
+Licensed under [MIT](LICENSE-MIT).
+Use, modify and distribute freely.
+
 ### Creative content (texts, manifesto, concepts)
 Licensed under [CC BY-NC-SA-4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/).
 You may share and adapt freely, as long as you:
 - Give appropriate credit
 - Do **not** use it for commercial purposes
 - Distribute under the same license
-
-### Source code (HTML, CSS)
-Licensed under [MIT](LICENSE-MIT).
-Use, modify and distribute freely.
 
 ---
 
