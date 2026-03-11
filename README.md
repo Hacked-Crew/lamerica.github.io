@@ -68,4 +68,4 @@ Hacked-Crew
 
 ## 🤝 Contributing
 
-Pull requests and forks are welcome. If you use or adapt this work, please credit the source. 🙏
+If you use or adapt this work, please credit the source. 🙏
