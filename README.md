@@ -24,10 +24,10 @@ Wordplay, irony, and reflections on contemporary USA culture.
 
 ```
 /
-├── index.html               # Main manifesto page
-├── og-image.png             # Open Graph image
-├── LICENSE-CC-BY-NC-SA-4.0  # License for creative content
-├── LICENSE-MIT              # License for source code
+├── index.html           # Main manifesto page
+├── og-image.png         # Open Graph image
+├── LICENSE-CC-BY-NC-SA  # License for creative content
+├── LICENSE-MIT          # License for source code
 └── README.md
 ```
 
