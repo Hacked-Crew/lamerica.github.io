@@ -1,7 +1,7 @@
 # lamerica.github.io
 
 [![Code License: MIT](https://img.shields.io/badge/Code%20License-MIT-yellow.svg)](LICENSE-MIT)
-[![Content License: CC BY-NC-SA-4.0](https://img.shields.io/badge/Content%20License-CC%20BY--NC--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+[![Content License: CC-BY-NC-SA-4.0](https://img.shields.io/badge/Content%20License-CC%20BY--NC--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 
 ---
 
@@ -26,7 +26,7 @@ Wordplay, irony, and reflections on contemporary USA culture.
 /
 ├── index.html               # Main manifesto page
 ├── og-image.png             # Open Graph image
-├── LICENSE-CC BY-NC-SA-4.0  # License for creative content
+├── LICENSE-CC-BY-NC-SA-4.0  # License for creative content
 ├── LICENSE-MIT              # License for source code
 └── README.md
 ```
@@ -42,7 +42,7 @@ Licensed under [MIT](LICENSE-MIT).
 Use, modify and distribute freely.
 
 ### Creative content (texts, manifesto, concepts)
-Licensed under [CC BY-NC-SA-4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/).
+Licensed under [CC-BY-NC-SA-4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/).
 You may share and adapt freely, as long as you:
 - Give appropriate credit
 - Do **not** use it for commercial purposes
